@@ -76,6 +76,10 @@ On Windows, all library dependencies are automatically included within the `exte
 
 Feel free to ask us in the IRC channel #yuzu-emu @ [libera](https://web.libera.chat) or on [Discord](https://discord.com/invite/u77vRWY) if you have issues.
 
+### Exception Settings
+Since yuzu implemented a new memory managment system called "fastmem", yuzu will throw memory access violation errors. To launch a game successfully the following Win32 Exception needs to be disabled:
+![Alt text](resources/disable-exceptions.png?raw=true "Title")
+
 ## Method II: MinGW-w64 Build with MSYS2
 
 ### Prerequisites to install
